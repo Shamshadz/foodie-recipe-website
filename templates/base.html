@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Foodie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -22,31 +25,36 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">FOODie</a>
+            <a class="navbar-brand" href="#"><strong>FOODie</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto topnav">
+                <ul class="navbar-nav topnav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">favourite</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Add recipe</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Favourite</a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal"
+                </ul>
+                <ul class="navbar-nav ml-auto topnav">
+                    <li class="nav-item active">
+                        <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal"
                             data-target="#myModal">Sign In</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal"
                             data-target="#myModal">Register</a>
                     </li>
@@ -105,12 +113,37 @@
     {% block content %}
     {% endblock %}
 
-    <footer>
-        <section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora recusandae, voluptates, pariatur eius
-            architecto officiis similique expedita, enim saepe rerum doloribus deserunt animi culpa error minus modi
-            repellendus voluptatum sint voluptatibus. Beatae!
-        </section>
+    <!-- Footer style="background-color: #3f51b5" -->
+    <footer class="text-center text-lg-start" style="background-color: rgb(224, 42, 72);">
+        <div class="container d-flex justify-content-center py-5">
+            <a href="https://gmail.com/" style="text-decoration: none;"></a>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #302738;">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            </a>
+            <a href="https://gmail.com/" style="text-decoration: none;"></a>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #302738;">
+                <i class="fab fa-github"></i>
+            </button>
+            </a>
+            <a href="https://gmail.com/" style="text-decoration: none;">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #302738;">
+                    <i class="fab fa-instagram"></i>
+                </button>
+            </a>
+            <a href="https://gmail.com/" style="text-decoration: none;"></a>
+            <button type="button" class="btn btn-primary btn-lg mx-2" style="background-color: #302738;">
+                <i class="fab fa-twitter"></i>
+            </button>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" style="text-decoration: none;" href="https://gmail.com/">choudharyshamshad007@gmail.com</a>
+        </div>
+        <!-- Copyright -->
     </footer>
 
 
