@@ -9,15 +9,16 @@
     </form>
 </div>
 
-<div class="container">
+<div class="container" id="card" >
+    {% for resp in res %}
+    {% if forloop.counter < 11 %}
     <div class="card1">
         <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
+            <img src="{{resp.image}}" alt="rover" />
         </div>
         <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
             <h4>
-                {{res.title}}
+                <a href="/article/" style="text-decoration: none; color: inherit; " >{{resp.title }}</a>
             </h4>
             <p>
                 An exploration into the truck's polarising design
@@ -30,206 +31,9 @@
             </div>
         </div>
     </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card1">
-        <div class="card-header1">
-            <img src="{{res.image}}" alt="rover" />
-        </div>
-        <div class="card-body1">
-            <span class="tag1 tag-teal">Technology</span>
-            <h4>
-                {{res.title}}
-            </h4>
-            <p>
-                An exploration into the truck's polarising design
-            </p>
-            <div class="user1">
-                <div class="user-info1">
-                    <strong>By</strong>
-                    <a href="">Rachel Lucas</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endif %}
+    {% endfor %}
 </div>
+
 
 {% endblock %}
