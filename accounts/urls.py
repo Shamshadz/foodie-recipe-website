@@ -1,5 +1,5 @@
 from accounts import views
-from django.urls import path,include
+from django.urls import path
 
 urlpatterns = [
     path('',views.home_view,name="home_view"),

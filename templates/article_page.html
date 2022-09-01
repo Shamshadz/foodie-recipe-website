@@ -43,7 +43,9 @@
             <div class="container">
                 <ol>
                     {% for i in res.instructions %}
-                    <u><h6>Step  {{ forloop.counter }}</h6></u>
+                    <u>
+                        <h6>Step {{ forloop.counter }}</h6>
+                    </u>
                     <li style="list-style: none">{{ i.text }}</li>
                     {% endfor %}
                 </ol>
