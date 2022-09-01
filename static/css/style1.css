@@ -1,0 +1,11 @@
+.one{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    background-color: rgb(230, 218, 218);
+}
+
+.recipe-image {
+    height: 50%;
+    width: 50%;
+}
