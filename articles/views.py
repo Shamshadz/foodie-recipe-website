@@ -1,5 +1,12 @@
 import requests, random
 from django.shortcuts import render
+from dotenv import load_dotenv
+from django.conf import settings
+import os
+
+load_dotenv()
+
+API_KEY = os.environ.get('API_KEY')
 
 # Create your views here.
 
@@ -8,7 +15,7 @@ def change_recipe():
     url = "https://random-recipes.p.rapidapi.com/ai-quotes/50"
 
     headers = {
-        "X-RapidAPI-Key": "94ef74103emsha7e58d2e3a63508p167a62jsn8cd9ca167ba0",
+        "X-RapidAPI-Key":  'API_KEY',
         "X-RapidAPI-Host": "random-recipes.p.rapidapi.com"
     }
 

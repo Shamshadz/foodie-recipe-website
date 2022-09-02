@@ -6,7 +6,7 @@ function reload_javascript(){
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '94ef74103emsha7e58d2e3a63508p167a62jsn8cd9ca167ba0',
+        'X-RapidAPI-Key': ' ',
         'X-RapidAPI-Host': 'random-recipes.p.rapidapi.com'
       }
     };
